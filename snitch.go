@@ -60,7 +60,7 @@ import (
 
 func main() {
 
-   config, err := ReadConfig(`snitch.conf`)
+   config, err := ReadConfig(`/etc/snitch/snitch.conf`)
    if err != nil {
            fmt.Println(err)
    }

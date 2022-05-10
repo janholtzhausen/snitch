@@ -1,4 +1,3 @@
-FROM scratch
-COPY ./snitch /
-COPY ./snitch.conf /
-CMD ["/snitch"]
+FROM alpine
+COPY ./snitch /usr/bin/
+CMD ["snitch"]
